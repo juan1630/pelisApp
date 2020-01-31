@@ -1,0 +1,8 @@
+
+  <ion-slides [options]="slidesOpts" >
+    <ion-slide *ngFor="let poster of posters">
+    <ion-card> 
+      <img [src]="poster.poster_path |  image" >  
+    </ion-card>
+    </ion-slide>
+  </ion-slides>

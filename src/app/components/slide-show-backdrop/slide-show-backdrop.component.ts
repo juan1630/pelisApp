@@ -15,8 +15,10 @@ export class SlideShowBackdropComponent implements OnInit {
     freeMode: true
   }
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {}
+   }
+
+  ngOnInit() {  }
 
 }
