@@ -1,7 +1,7 @@
 
   <ion-slides [options]="slidesOpts" >
-    <ion-slide *ngFor="let poster of posters">
-    <ion-card> 
+    <ion-slide *ngFor="let poster of posters"   >
+    <ion-card  (click)="verDetalle( poster.id)"  > 
       <img [src]="poster.poster_path |  image" >  
     </ion-card>
     </ion-slide>
