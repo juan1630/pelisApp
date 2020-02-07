@@ -70,4 +70,7 @@ const apiKey = environment.apiKey;
     return this.ejecutarQuery<RespuestaCredits>(`/movie/${id}/credits?a=1`);
   }
 
+  buscarPeliculas( texto: string ) {
+      return this.ejecutarQuery( `/search/movie?query=${texto}` );
+  }
 }
