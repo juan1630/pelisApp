@@ -1,5 +1,5 @@
 
-  <ion-slides [options]="slidesOpts" >
+  <ion-slides [options]="slidesOpts" mode="md" >
     <ion-slide *ngFor="let poster of posters"   >
     <ion-card  (click)="verDetalle( poster.id)"  > 
       <img [src]="poster.poster_path |  image" >  
